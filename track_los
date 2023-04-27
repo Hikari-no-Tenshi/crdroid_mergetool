@@ -4,6 +4,7 @@ bionic
 bootable/recovery
 build/make
 build/soong
+external/expat
 external/libcxx
 frameworks/av
 frameworks/base
@@ -14,8 +15,10 @@ hardware/interfaces
 hardware/lineage/interfaces
 libcore
 lineage-sdk
+packages/apps/CellBroadcastReceiver
 packages/apps/Contacts
 packages/apps/Dialer
+packages/apps/ExactCalculator
 packages/apps/Launcher3
 packages/apps/LineageParts
 packages/apps/Messaging
