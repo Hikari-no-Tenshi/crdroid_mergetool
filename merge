@@ -223,6 +223,7 @@ case $job in
         read yesno
         clear
         if [[ $yesno == "Y" || $yesno == "y" || $yesno == "" ]]; then
+            rm $SCRIPT_PATH/merge_succeeded $SCRIPT_PATH/merge_failed 2>/dev/null
             merge_tag "android-11.0.0_r$revision"
         fi
     ;;
@@ -231,6 +232,7 @@ case $job in
         read yesno
         clear
         if [[ $yesno == "Y" || $yesno == "y" || $yesno == "" ]]; then
+            rm $SCRIPT_PATH/merge_succeeded $SCRIPT_PATH/merge_failed 2>/dev/null
             merge_los
         fi
     ;;
